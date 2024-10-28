@@ -76,7 +76,8 @@ public class Main {
             //Случайный выбор слова из словаря и сохраняем в randomWord
             Random random = new Random();
             randomWord = words.get(random.nextInt(words.size()));//Сгенерировано случайное число, представляющее индекс элемента в списке words.
-
+            sbWord.append(randomWord);
+        
         //Шифрование слова
             encryptWord = new char[randomWord.length()];//Массив символов длинной = длине randomWord и присвоено переменной enctyptWord
             for (int i = 0; i < randomWord.length(); i++) {
